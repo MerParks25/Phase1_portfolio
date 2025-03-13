@@ -29,7 +29,7 @@ img.circular {
     border-radius: 50%;
     max-width: fit-content;
     height: auto;
-    margine: 0
+    margin: 0
 }
 .profile-pic {
     display: block;
