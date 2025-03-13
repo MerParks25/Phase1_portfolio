@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mer Parks Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
         <h1>Mer Parks</h1>
-    </div> 
-    <div>
-        <h3>About Me</h3>
-        <p>Mer is a full stack developer with a passion for travel. She has traveled to 18 countries and 26 US states. She is a travel blogger and has a travel podcast. She is also a travel agent and can help you plan your next trip.</p>  
-    </div> 
-    <div>
-        <h4>Skills</h4>
+        <img class="circular" src="https://media.licdn.com/dms/image/v2/C4D03AQEsPre-JZ9deg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1642191861658?e=1747267200&v=beta&t=LyNMwBcwSiduedeo9XMkMJp77UMb_0P1_IbvscPVxtc" alt="Mer Parks" height="250" width="250">
+    <nav>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-        </ul>  
-        <h4>Projects</h4>
-        <ul>
-            <li>Bio</li> 
-            <p>This project is a bio about my professional career</p> 
-            add picture
-            <a href="https://codepen.io/merparks/pen/ExvQqQv">Bio</a>
-            <li>Tribute</li>
-            add picture
-            <p>This project is a bio about my professional career</p> 
-            <a href="https://codepen.io/merparks/pen/ExvQqQv">Bio</a>
-        </ul>  
-        <div>
-            <h3>Contact Me</h3>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div> 
-    </body>
-    <footer>
-        <p>&copy; 2022</p> 
-    </footer>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="about">
+    <h3>About Me</h3>
+    <p>Hello! I'm a wife, mother, DIYer and tech student passionate about web development. I enjoy designing and creating with the support of my family.</p>
+</section>
+
+<section id="skills">
+    <h3>Skills</h3>
+    <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Flexbox</div>
+        <div class="skill">Linux</div>
+        <div class="skill">Git</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h3>Projects</h3>
+    <div class="projects-container">
+        <article class="project-card">
+            <img src="https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/467950755_10160917409974811_1787204670186886947_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9eae26&_nc_ohc=zNRifiT2yRIQ7kNvgEHcYaa&_nc_oc=Adg_K9WG--fZ56Agx3LQ8-6_rNusm4jkdZNBjVRtnJ26IDMJR2EEnGJdIFFqUX_M4QI&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=AhuUK5EG3Q3oncRUPyAd2h1&oh=00_AYF9CwNum7_jR1sEfG7xQGUOfVVysYP8IEmMDrTFTxOMxw&oe=67D8E7A8" alt="Jason">
+            <h3>First Came Jason</h3>
+            <p>Jason isn't really a project. He helps me with all the crazy ideas I come up with. Even if that means knocking down a house...</p>
+        </article>
+        <article class="project-card">
+            <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/468326347_10160961718409811_6944410110641043924_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=84GyPHQQgQMQ7kNvgHCr71A&_nc_oc=AdgQKyMd-XAJB5UHBPQ6qiSPXXqk-feOgNdxtKMi_KNaWKr3kuEkX77BxEYOtoyJCb4&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=AidTAxUdrWcv4b_-RhOz14a&oh=00_AYFqNvMuewyw1XpI4ZZLXyytwvehEwPu2MgIHXchuMpIDg&oe=67D8F9C2" alt="House">
+            <h3>Next Came the House</h3>
+            <p>In fairness, knocking down the house was never really my plan, but the foundation had other ideas... After talking to several contactors we came to the conclusion this was our only option. </p>
+        </article>
+        <article class="project-card">
+            <img src="https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/280459678_10159002812604811_7151202626657837265_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mEfNXktqbm8Q7kNvgEvrzHM&_nc_oc=Adj1qGX3t5NFwrtcr3VMP_LYt_oqHOGMxEhNRnZqQLWtkQhwJTB_Pz6qb-wbopoHFxo&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=AbcKc6rogBbZEz9Gh7LKkzx&oh=00_AYGwwhDC8INoU0hr8s1O8HUF1TkvKj9RgJMi4QeF8MPLNg&oe=67D8F973" alt="Everett">
+            <h3>Then Came Everett</h3>
+            <p>Once we finished the house we decided to take on our most important project of our lives. Our son Everett who keeps us businer than anything mom can dream up...for now...</p>
+        </article>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Mer Parks. All rights reserved.</p>
+</footer>
+
+</body>
 </html>

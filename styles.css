@@ -1,0 +1,171 @@
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #292929;
+    justify-content: center;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+#Mer {
+    background-color: #006d5e;
+    justify-content: center;
+    color: white;
+}
+header {
+    background-color: #006d5e;
+    color: white;
+    justify-content: center;
+}
+img.circular {
+    border-radius: 50%;
+    max-width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #006d5e; /* Change background on hover */
+}
+
+/* About Me Styles */
+#about {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Skills Section */
+#skills {
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px; /* Padding for the section */
+    text-align: center; /*center the text*/
+}
+
+form {
+    display: flex; /* Use Flexbox for the form */
+    flex-direction: column; /* Vertical layout */
+    max-width: 400px; /* Max width for the form */
+    margin: 10px; /* Center the form */
+}
+
+form label {
+    margin: 10px 0 5px; /* Margin for labels */
+}
+
+form input,
+form textarea {
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+form button {
+    padding: 10px; /* Padding for button */
+    background-color: #333; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+form button:hover {
+    background-color: #555; /* Change color on hover */
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+}
+
